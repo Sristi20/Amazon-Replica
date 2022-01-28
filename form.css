@@ -1,0 +1,77 @@
+*{
+    margin:1px;
+    padding: 0;
+    box-sizing: border-box;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .debo{
+    font-size:14px;
+    color:blue;
+  }
+.form-page{
+    width: 100%;
+    height: 1500px;
+    background-color:#EAEDED ;
+  }
+  .santos{
+    width: 100%;
+    text-align: left;
+  }
+  .discrib{
+    font-size:12px;
+    color:black;
+  }
+  .dip{
+    width: 100%;
+    color:gray;
+    text-align: left;
+    font-size:12px;
+  }
+  .janrat{
+    width: 100%;
+    color:black;
+    text-align: center;
+    border-bottom: 1px solid gray;
+  }
+  
+  .lal{
+    width: 100%;
+    color:brown;
+    text-align: left;
+    font-size: 12px;
+  }
+  .hbd{
+    width: 40%;
+    margin:0px auto;
+  }
+  .santos1{
+    width: 100%;
+    height: 80px;
+    text-align:left;
+  }
+  .tele{
+    width: 100%;
+    color: black;
+  }
+  input[type=text],select{
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: vertical;
+  }
+  .santos2{
+    height: 30px;
+    width: auto;
+  }
+  .dallo{
+    padding: 4px;
+      text-align: center;
+      width: 110px;
+      border-radius: 2px;
+      background:rgb(247, 204, 11);
+      margin-top: 15px;
+  }
