@@ -590,6 +590,7 @@ h3{
   width: 40%;
   height: 70px;
   box-sizing: border-box;
+  margin:0 38px;
 }
 .unity{
   width: auto;
@@ -598,7 +599,7 @@ h3{
   box-sizing: border-box;
 }
 .lpu1{
-  width: 10%;
+  width: 9%;
   height: 410px;
   float:left;
 }
@@ -657,7 +658,7 @@ h3{
   height: 70px;
 }
 .lpu2{
-  width:32%;
+  width:27%;
   height:500px;
   float:left;
 }
@@ -674,23 +675,28 @@ h3{
   color: black;
   font-size: 16px;
 }
+.jelly{
+  color:black;
+  font-size:14px;
+  font-weight: bold;
+}
 .rani{
   color: black;
   font-size: 19px;
 }
 .lpu3{
-  width:37%;
+  width:41%;
   height:500px;
   float:left;
 }
 .kit1{
   width: 100%;
-  height: 100px;
+  height: 76px;
   border-bottom: 1px solid grey;
 }
 .rani1{
   color: blue;
-  font-size:12px;
+  font-size: 13px;
 }
 .kit2{
   width:100%;
@@ -703,31 +709,37 @@ h3{
 }
 
 .debo{
-  font-size:14px;
-  color:blue;
+  font-size:13px;
+  color:rgb(0, 0, 255);
 }
 .ritu1{
   width: 15%;
   height: 85px;
   float: left;
-  text-align: center;
+  text-align:center;
 }
 .ritu2{
   width: 20%;
   height: 85px;
   float:left;
-  padding:0px 17px;
+  padding:0px 37px;
 }
 .kajol1{
-  width: 80%;
+  width: auto;
   height: 44px;
   margin-top:4px;
 }
 .kit3{
   width: 100%;
-  height: 270px;
+  height: 280px;
+  margin-top: 6px;
 }
 .hat{
+  color: brown;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align:left;
+}
+.gip{
   color: brown;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align:center;
@@ -738,12 +750,13 @@ h3{
 }
 .kit4{
   width: 100%;
-  height: 100px;
+  height: 120px;
 }
 .kichu1{
   width: 17%;
   height: 60px;
   float:left;
+  margin-top: 4px;
 }
 .xcblue{
   width: auto;
@@ -751,8 +764,9 @@ h3{
 }
 .kichu2{
   color:blue;
-  font-size: 12px;
+  font-size: 13px;
   margin:0 4px;
+  margin-top: 4px;
 }
 .dobi{
   color:grey;
@@ -832,6 +846,7 @@ h3{
   color:black;
   font-size: 13px;
   list-style-type: disc;
+  margin-top: 6px;
 }
 .php{
   width: auto;
@@ -869,7 +884,7 @@ h3{
 }
 .hand{
   width: auto;
-  height: 340px;
+  
 }
 .dazy3{
   width: 20%;
@@ -908,7 +923,7 @@ h3{
 }
 .product-page{
   width: 100%;
-  height: 1940px;
+  height: 1600px;
 }
 .janrat{
   width: 100%;
@@ -922,8 +937,19 @@ h3{
 }
 .rani2{
   color: blue;
-  font-size:12px;
-  width:60%;
+  font-size: 13px;
+}
+
+.fab2{
+ width: auto;
+ height: 16px;
+ float:left;
+}
+.gip2{
+  color: blue;
+  font-size: 13px;
+  width:50%;
+  float:left;
 }
 .hta{
   font-size:13px;
@@ -972,27 +998,31 @@ h3{
 }
 .mango{
   width: 10%;
-  height: 50px;
   float:left;
 }
 table, tr,td{
   background-color:#EAEDED;
-  color:black;
-  border: 1px solid silver;
+  color:black; 
   padding-left: 7px;
   padding-right: 7px;
 }
+td{
+  width: 20%;
+   height: 40px;
+   border: 1px solid silver;
+}
 table{
   width: 100%;
-  border: 1px solid silver;
-  height: 90px;
+  height: 40px;
 }
 table,tr{
-  border: 1px solid silver;
-  height: 70px;
+  height: 49px;
   
 }
-
+.mojo{
+  width: 10%;
+  float:left;
+}
 .date{
   color:gray;
   font-size:12px;

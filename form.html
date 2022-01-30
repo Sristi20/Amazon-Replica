@@ -11,9 +11,6 @@
 
 <body>
 <div class="form-page">
-    <div class="kalu">
-      <h2 class="janrat">FORM PAGE</h2>
-    </div>
     <div class="hbd">
       <div class="santos">
         <p class="dip">Your Account &gt; Your Address &gt;<span class="lal"> New Address</span></p>
@@ -23,70 +20,94 @@
         <p class="debo">Or find an Amazon pickup location near you &gt;</p>
       </div>
       <div class="santos2">
-        <form action="/action_page.php">
-          <label for="country">
-            <h5 class="tele">Country/Region</h5>
-          </label>
-          <select id="country" name="country" style="color:black;">
-            <option value="india">India</option>
-            <option value="canada" style="color:black;">Canada</option>
-            <option value="usa" style="color:black;">USA</option>
-            <option value="australia" style="color:black;">Australia</option>
-            <option value="uk" style="color:black;">UK</option>
-            <option value="china" style="color:black;">China</option>
-          </select>
-          <label for="fname">
-            <h5 class="tele">Full Name(First and Last name)</h5>
-          </label>
-          <input type="text" id="fname" name="fullname">
-          <label for="mnumber">
-            <h5 class="tele">Mobile Number</h5>
-          </label>
-          <input type="text" id="mname" name="number" placeholder="10-digit mobile number without prefix">
-          <label for="pncode">
-            <h5 class="tele">PIN Code</h5>
-          </label>
-          <input type="text" id="pcode" name="number" placeholder="6 digits [0-9]PIN code">
-          <label for="farea">
-            <h5 class="tele">Flat, House no., Building, Company, Apartment</h5>
-          </label>
-          <input type="text" id="farea" name="area">
-          <label for="varea">
-            <h5 class="tele">Area, Colony, Street, Sector, Village</h5>
-          </label>
-          <input type="text" id="varea" name="area">
-          <label for="larea">
-            <h5 class="tele">Landmark</h5>
-          </label>
-          <input type="text" id="lcode" name="area" placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc.">
-          <label for="tarea">
-            <h5 class="tele">Town/City</h5>
-          </label>
-          <input type="text" id="lcode" name="area">
-          <label for="state">
-            <h5 class="tele">State / Province / Region</h5>
-          </label>
-          <select id="state" name="state" style="color:black;">
-            <option value="state">Select state</option>
-            <option value="andhra" style="color:black;">Andhra Pradesh</option>
-            <option value="aruna" style="color:black;">Arunachal Pradesh</option>
-            <option value="uttar" style="color:black;">Uttar Pradesh</option>
-            <option value="uttra" style="color:black;">Uttarakhand</option>
-          </select>
-          <label for="country">
-            <h3 class="tele">Add delivery instructions</h3>
-          </label>
-          <p class="discrib">Preferences are used to plan your delivery. However, shipments can sometimes arrive early
-            or later than planned.</p>
+        <form>
+          <div class="form1">
+            <label for="country">
+              <h5 class="tele">Country/Region</h5>
+            </label>
+            <select id="country" name="country">
+              <option value="india">India</option>
+              <option value="canada" >Canada</option>
+              <option value="usa" >USA</option>
+              <option value="australia" >Australia</option>
+              <option value="uk" >UK</option>
+              <option value="china" >China</option>
+            </select>
+          </div>
+          <div class="form1">
+            <label for="fname">
+              <h5 class="tele">Full Name(First and Last name)</h5>
+            </label>
+            <input type="text" id="fname" name="fullname">
+          </div>
+          <div class="form1">
+            <label for="mnumber">
+              <h5 class="tele">Mobile Number</h5>
+            </label>
+            <input type="text" id="mname" name="number" placeholder="10-digit mobile number without prefix">
+          </div>
+          <div class="form1">
+            <label for="pncode">
+              <h5 class="tele">PIN Code</h5>
+            </label>
+            <input type="text" id="pcode" name="number" placeholder="6 digits [0-9]PIN code">
+          </div>
+          <div class="form1">
+            <label for="farea">
+              <h5 class="tele">Flat, House no., Building, Company, Apartment</h5>
+            </label>
+            <input type="text" id="farea" name="area">
+          </div>
+          <div class="form1">
+            <label for="varea">
+              <h5 class="tele">Area, Colony, Street, Sector, Village</h5>
+            </label>
+            <input type="text" id="varea" name="area">
+          </div>
+          <div class="form1">
+            <label for="larea">
+              <h5 class="tele">Landmark</h5>
+            </label>
+            <input type="text" id="lcode" name="area" placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc.">
+         </div>
+         <div class="form1">
+            <label for="tarea">
+              <h5 class="tele">Town/City</h5>
+            </label>
+            <input type="text" id="lcode" name="area">
+          </div>
+          <div class="form1">
+            <label for="state">
+              <h5 class="tele">State / Province / Region</h5>
+            </label>
+            <select id="state" name="state" >
+              <option value="state">Select state</option>
+              <option value="andhra" >Andhra Pradesh</option>
+              <option value="aruna">Arunachal Pradesh</option>
+              <option value="uttar">Uttar Pradesh</option>
+              <option value="uttra">Uttarakhand</option>
+            </select>
+         </div>
+         <div class="form1">
+            <label for="country">
+              <h3 class="tele">Add delivery instructions</h3>
+              <p class="discrib">Preferences are used to plan your delivery. However, shipments can sometimes arrive early
+              or later than planned.</p>
+            </label>
+          </div>
+          <div class="form1">
           <label for="address">
             <h5 class="tele">Address Type</h5>
           </label>
-          <select id="address" name="address" style="color:black;">
+          <select id="address" name="address">
             <option value="address">Select an Address type</option>
-            <option value="home" style="color:black;">Home (7 am-9 pm delivery)</option>
-            <option value="office" style="color:black;">Office/Commercial (10 AM - 6 PM delivery)</option>
+            <option value="home" >Home (7 am-9 pm delivery)</option>
+            <option value="office" >Office/Commercial (10 AM - 6 PM delivery)</option>
           </select>
+        </div>
+        <div class="form1">
           <button class="dallo" type="submit">Add address</button>
+        </div>
         </form>
       </div>
     </div>
