@@ -31,7 +31,7 @@
 }
 .lowersection{
   width: 100%;
-  height:35px;
+  height:40px;
   background: #232f3e;
 }
 .logo{
@@ -77,9 +77,13 @@
 }
 
 .all{
-  background: #dadada;
+  background: #EAEDED;
   color: black;
   font-size: 11px;
+  height: 35px;
+  width: 40px;
+  margin:5px 0;
+  border: none;
 }
 .nav-center{
   width: calc(100% - 80px);
@@ -99,7 +103,7 @@ input{
   outline: none;
   color: #000;
 }
-button{
+.search{
   background: rgb(247,155,80);
   height: 35px;
   width: 40px;
@@ -123,25 +127,36 @@ button{
   float: left;
   width: 20%;
   height: 45px;
-  padding: 10px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.red:hover{
+  border: 1px solid grey;
 }
 
 .sony{
-  width: 30px;
+  width: 27px;
 }
 .red1{
   float: left;
-  width: 30%;
+  width: 35%;
   height: 45px;
   padding-top: 5px;
+  box-sizing: border-box;
+}
+.red1:hover{
+  border: 1px solid grey;
 }
 
 .red2{
   float:left;
-  width:30%;
+  width:24%;
   height: 45px;
   padding-top: 5px;
   text-align: center;
+}
+.red2:hover{
+  border: 1px solid grey;
 }
 
 .red3{
@@ -149,6 +164,9 @@ button{
   width:20%;
   height: 45px;
   padding-top: 8px;
+}
+.red3:hover{
+  border: 1px solid grey;
 }
 .logo20{
   width: 100%;
@@ -162,7 +180,7 @@ button{
 .pinky{
   font-size: 14px;
   width: 100%;
-  height: 35px;
+  height: 40px;
 }
 ul li{
   float: left;
@@ -170,6 +188,127 @@ ul li{
     font-weight: 500;
     font-size: 12px;
     margin: 2px 8px;
+}
+.pinky li:hover{
+  border:1px solid white;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,0.8);
+  transition: 0.5s;
+  overflow-x:hidden;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+.jaggu{
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  height: 780px;
+}
+
+.sidebar a:hover {
+  color:rgb(247,155,80);
+}
+
+.sidebar .closebtn {
+  position: relative;
+  font-size: 40px;
+  color: #bdbdbd;;
+  top:0px;
+  left:390px;
+
+}
+.ryt{
+  width: auto;
+  float:left;
+  padding:5px;
+}
+.ryt1{
+  color:white;
+  float:left;
+  padding:10px;
+}
+.simple{
+  position: absolute;
+  width: 25%;
+  color:white;
+  background-color:#232f3e;
+  top:0;
+  font-size: 17px;
+  font-weight: bold;
+  height: 45px;
+  text-align: center;
+}
+.simple1{
+  top:0;
+  width: 25%;
+  background-color:white;
+  height: 120px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+  padding:10px;
+}
+.simple2{
+  top:0;
+  width: 25%;
+  background-color:white;
+  height: 219px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+  padding:10px;
+}
+.simple3{
+  top:0;
+  width: 25%;
+  background-color:white;
+  height: 180px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+  padding:10px;
+}
+.simple4{
+  top:0;
+  width: 25%;
+  background-color:white;
+  height: 140px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+  padding:10px;
+}
+
+.simple5{
+  top:0;
+  width: 25%;
+  background-color:white;
+  height: 127px;
+  text-align: left;
+  border-bottom: 1px solid silver;
+  padding:10px;
+}
+.tread{
+  font-size: 17px;
+  color:black;
+  margin-left: 21px;
+}
+.small{
+  color:rgb(44, 43, 43);
+  font-size: 14px;
+  margin-top: 9px;
+  margin-left: 21px;
 }
 .green1{
   float:left;
@@ -267,10 +406,11 @@ ul li{
   height: 1080px;
 }
 .cup{
-  z-index: -1;
-  position: relative;
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
+
 .monkey1{
   width: 20%;
     float: left;
@@ -330,7 +470,7 @@ ul li{
   height: 35px;
 }
 .amigo{
-  color: blue;
+  color: #007185;
   padding:10px;
 }
 .school1{
@@ -341,16 +481,256 @@ ul li{
   width:90px;
   height:80px;
 }
+.fony{
+  width: 28px;
+  float: left;
+  padding:5px;
+}
+.nav1icon{
+    top: 40px;
+    left: 330px;
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent;
+    border-top:4px solid #666;
+}
+.dropbtn1{
+  padding:4px;
+  font-size: 10px;
+  border: none;
+  background-color: black;
+}
+.dropbtn {
+  padding:6px;
+  font-size: 10px;
+  border: none;
+  background-color: black;
+}
+.dropbtn2 {
+  padding:4px;
+  font-size: 10px;
+  border: none;
+  background-color:#232f3e ;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.grey{
+  font-size: 13px;
+  color:rgb(24, 23, 23);
+  float: center;
+  padding:9px;
+}
+.gp{
+  width: 100%;
+  height: 11px;
+  padding: 8px;
+}
+.grey1{
+  font-size: 11px;
+  color:rgb(24, 23, 23);
+  width: 50%;
+  float: left;
+  text-align: right;
+}
+.mortine{
+  display:none;
+  position: absolute;
+  background-color: white;
+  z-index:1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+}
+.lines{
+  border-top: 1px solid silver;
+  width: 100%;
+  height: 6px;
+}
+.anext{
+  float:right;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  
+}
+.dropdown:hover .mortine {
+  display: block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  max-height: 510px;
+  color:black;
+}
+.dropdown-content , label{
+ font-size: 13px ;
+ color: black;
+ padding:6px;
+}
+
+.lang{
+  width: 50px;
+  display: block;
+}
+
+.dropdown-content input {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 16%;
+  float: left;
+  border-bottom: 1px solid silver;
+}
+.dropdown-content a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  height: 22px;
+  margin-top:2px;
+}
+.dropdown-content a:hover {
+  background-color: #ccc;
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdowns-content{
+  background-color: white;
+  display: none;
+  width: 380px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: -320px;
+  position:absolute;
+  height: auto;
+}
+.dropdown:hover .dropdowns-content {
+  display: block;
+}
+.dropdowns-content a:hover {
+  background-color: #ccc;
+
+}
+.block{
+  color: black;
+  text-decoration: none;
+  background-color:white;
+  padding: 13px;
+  text-align: center;
+  width: 100%;
+  height:75px;
+  border-bottom: 1px solid silver;
+}
+.delo{
+  color:#007185;
+  font-size: 11px;
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.rod{
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  position:absolute;
+  padding: 10px;
+  width: 100%;
+}
+
+.colo1{
+  color: black;
+  width: 50%;
+  float: left;
+  padding:10px;
+  text-align: left;
+}
+.colo1:hover{
+  color: rgb(247,155,80);
+}
+.colo2{
+  color: black;
+  width: 50%;
+  float: right;
+  padding:10px;
+  text-align: left;
+  border-left: 1px solid silver;
+}
+.blob{
+  color:rgb(24, 23, 23);
+  font-size: 12px;
+
+}
+.dugu{
+  color: #000;
+  font-size: 16px;
+}
+.openbtn {
+  cursor: pointer;
+  background-color:#232f3e;
+  color: white;
+  border:none;
+}
+.openbtn:hover{
+  border: 1px solid white;
+}
+
 .skill3{
   box-sizing: border-box;
   text-align: center;
   float:left;
-  text-decoration-color: blue;
+  text-decoration-color: #007185;
 }
-.star1{
+.slideshow{
   width: 100%;
-  height: 300px;
+  position: relative;
+  height: 250px;
 }
+.gogo{
+    text-align: center;
+    width: 200px;
+    border-radius: 2px;
+    background:rgb(245, 160, 90);
+    padding:8px;
+    color:black;
+}
+.slide{
+  position: relative;
+  width: 100%;
+  display:none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 .star2{
   width: 100%;
   height: 380px;
@@ -590,7 +970,7 @@ h3{
   width: 40%;
   height: 70px;
   box-sizing: border-box;
-  margin:0 38px;
+  margin:0 auto;
 }
 .unity{
   width: auto;
@@ -678,11 +1058,17 @@ h3{
 .jelly{
   color:black;
   font-size:14px;
-  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.jhota1{
+  width: 100%;
+  height: 60px;
 }
 .rani{
   color: black;
   font-size: 19px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: 30px;
 }
 .lpu3{
   width:41%;
@@ -695,7 +1081,12 @@ h3{
   border-bottom: 1px solid grey;
 }
 .rani1{
-  color: blue;
+  color:#007185;
+  font-size: 13px;
+  height:20px;
+}
+.color{
+  color: #007185;
   font-size: 13px;
 }
 .kit2{
@@ -707,10 +1098,19 @@ h3{
   width: 100%;
   height: 44px;
 }
+.debob{
+  font-size:11px;
+  color:#007185;
+  text-align: center;
+  padding:5px;
+}
+.debob:hover{
+color:rgb(247, 147, 80);
+}
 
 .debo{
   font-size:13px;
-  color:rgb(0, 0, 255);
+  color:#007185;
 }
 .ritu1{
   width: 15%;
@@ -738,6 +1138,8 @@ h3{
   color: brown;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align:left;
+  font-size: 14px;
+  height: 20px;
 }
 .gip{
   color: brown;
@@ -759,13 +1161,13 @@ h3{
   margin-top: 4px;
 }
 .xcblue{
-  width: auto;
+  width:auto;
   max-height: 55px;
 }
 .kichu2{
-  color:blue;
+  color:#007185;
   font-size: 13px;
-  margin:0 4px;
+  margin:0 2px;
   margin-top: 4px;
 }
 .dobi{
@@ -831,7 +1233,7 @@ h3{
   width: 80%;
 }
 .kitu{
-  color:blue;
+  color:#007185;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .vibe3{
@@ -932,21 +1334,21 @@ h3{
   border-bottom: 1px solid gray;
 }
 .fab{
-  width: 20%;
+  width:80px;
   height: 16px;
 }
 .rani2{
-  color: blue;
+  color: #007185;
   font-size: 13px;
 }
 
 .fab2{
  width: auto;
- height: 16px;
+ height: 14px;
  float:left;
 }
 .gip2{
-  color: blue;
+  color:#007185 ;
   font-size: 13px;
   width:50%;
   float:left;
@@ -963,7 +1365,7 @@ h3{
 }
 .jaddu{
   width: auto;
-  height: 15px;
+  height: 14px;
   float:left;
 }
 .kalu{
@@ -997,14 +1399,21 @@ h3{
     margin-top: 15px;
 }
 .mango{
-  width: 10%;
+  width: 40px;
   float:left;
+  text-align: center;
 }
 table, tr,td{
   background-color:#EAEDED;
   color:black; 
   padding-left: 7px;
   padding-right: 7px;
+}
+.rubbi{
+  width: auto;
+  text-align: center;
+  color:black;
+  margin-top:5px;
 }
 td{
   width: 20%;
@@ -1029,12 +1438,12 @@ table,tr{
   float: left;
 }
 .majo{
-  width: 10%;
-  height: 20px;
+  width: 40px;
+  text-align: center;
   float:left;
 }
 .life{
-  width: 15%;
+  width: 40px;
   height:20px ;
   float:left;
 }
