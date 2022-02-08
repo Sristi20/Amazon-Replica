@@ -971,12 +971,18 @@ h3{
   height: 70px;
   box-sizing: border-box;
   margin:0 auto;
+  cursor:pointer;
+  display: block;
 }
 .unity{
   width: auto;
   height: 60px;
   border:1px solid black;
   box-sizing: border-box;
+  opacity: 0.6;
+}
+.unity:hover{
+  opacity: 1;
 }
 .lpu1{
   width: 9%;
@@ -1001,12 +1007,7 @@ h3{
   height: 70px;
   box-sizing:border-box;
 }
-.jaffery{
-  width: auto;
-  height: 60px;
-  border:1px solid black;
-  box-sizing: border-box;
-}
+
 .pro4{
   width: 40%;
   height: 70px;
@@ -1015,24 +1016,7 @@ h3{
   width:40%;
   height: 70px;
 }
-.jaffery1{
-  width: auto;
-  height: 60px;
-  border:1px solid black;
-  box-sizing: border-box;
-}
-.jaffery2{
-  width: auto;
-  height: 60px;
-  border:1px solid black;
-  box-sizing: border-box;
-}
-.jaffery3{
-  width: auto;
-  height: 60px;
-  border:1px solid black;
-  box-sizing: border-box;
-}
+
 .pro6{
   width: 40%;
   height: 70px;
@@ -1045,7 +1029,6 @@ h3{
 .sink{
   width: auto;
   max-height: 340px;
-  margin:5px 0;
 }
 .dht{
   width:100%;
@@ -1255,6 +1238,7 @@ color:rgb(247, 147, 80);
   height: 270px;
   float: left;
 }
+
 .trans{
   width: auto;
   max-height: 120px;

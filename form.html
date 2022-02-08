@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
-  <meta name="viewport" content="width=1366px, initial-scale=0.1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
   <title>Document</title>
   <link rel="stylesheet" href="form.css">
 </head>
@@ -20,7 +20,7 @@
         <p class="debo">Or find an Amazon pickup location near you &gt;</p>
       </div>
       <div class="santos2">
-        <form>
+        <form action="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
           <div class="form1">
             <label for="country">
               <h5 class="tele">Country/Region</h5>
@@ -38,43 +38,43 @@
             <label for="fname">
               <h5 class="tele">Full Name(First and Last name)</h5>
             </label>
-            <input type="text" id="fname" name="fullname">
+            <input type="text" id="fname" name="fullname" required><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="mnumber">
               <h5 class="tele">Mobile Number</h5>
             </label>
-            <input type="text" id="mname" name="number" placeholder="10-digit mobile number without prefix">
+            <input type="number" id="mnumber" name="number" required placeholder="10-digit mobile number without prefix"><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="pncode">
               <h5 class="tele">PIN Code</h5>
             </label>
-            <input type="text" id="pcode" name="number" placeholder="6 digits [0-9]PIN code">
+            <input type="number" id="pncode" name="pinncode" required placeholder="6 digits [0-9]PIN code"><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="farea">
               <h5 class="tele">Flat, House no., Building, Company, Apartment</h5>
             </label>
-            <input type="text" id="farea" name="area">
+            <input type="text" id="farea" name="area" required><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="varea">
               <h5 class="tele">Area, Colony, Street, Sector, Village</h5>
             </label>
-            <input type="text" id="varea" name="area">
+            <input type="text" id="varea" name="area" required><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="larea">
               <h5 class="tele">Landmark</h5>
             </label>
-            <input type="text" id="lcode" name="area" placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc.">
+            <input type="text" id="larea" name="area" required placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc."><b><spam class="formerror"></spam></b>
          </div>
          <div class="form1">
             <label for="tarea">
               <h5 class="tele">Town/City</h5>
             </label>
-            <input type="text" id="lcode" name="area">
+            <input type="text" id="tarea" name="area"required><b><spam class="formerror"></spam></b>
           </div>
           <div class="form1">
             <label for="state">
@@ -113,5 +113,6 @@
     </div>
 
   </div>
+  <script src="form.js"></script>
 </body>
 </html>
