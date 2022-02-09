@@ -20,7 +20,7 @@ if (n < 0){
    y.style.display = "none"
  }
  slides[n].style.display = "block"
-
+ 
 }
 function openNav() {
   document.getElementById("mySidebar").style.width = "100%";

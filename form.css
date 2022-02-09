@@ -96,3 +96,10 @@
     width: 100%;
     height: 73px;
   }
+  .alert{
+    margin-bottom: 9px;
+  color: brown;
+  font-size: 12px;
+  font-weight: 600;
+  display: none;
+  }

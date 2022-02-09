@@ -10,6 +10,7 @@ function seterror(id, error, num){
     element = document.getElementsByClassName('formerror')[num].innerHTML = error;
 }
 function validateForm(){
+    console.log('myForm');
     var returnval = true;
     clearErrors();
     var names = document.forms['myForm']["fname"].value;
@@ -27,7 +28,7 @@ function validateForm(){
     }
 
     var numbers = document.forms['myForm']["pncode"].value;
-    if (numbers.length<5)
+    if (numbers.length<6)
     {
         seterror("numbers","! Length of pin is too short",2);
         returnval = false;
@@ -60,5 +61,5 @@ function validateForm(){
         seterror("areds","! Length is too short",6);
         returnval = false;
     }
-    return returnval;
+    //return returnval;
 }

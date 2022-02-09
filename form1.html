@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.1">
   <title>Document</title>
   <link rel="stylesheet" href="form.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <p class="debo">Or find an Amazon pickup location near you &gt;</p>
       </div>
       <div class="santos2">
-        <form  name="myForm" novalidate>
+        <form  name="myForm" novalidate  action="#" autocomplete="off" method="post">
           <div class="form1">
             <label for="country">
               <h5 class="tele">Country/Region</h5>
@@ -38,43 +39,50 @@
             <label for="fname">
               <h5 class="tele">Full Name(First and Last name)</h5>
             </label>
-            <input type="text" id="fname" name="fullname" required><b><spam class="formerror"></spam></b>
+            <input type="text" id="fname" name="fullname" maxlength="15">
+            <div  class="alert" id="name-error"></div>
           </div>
           <div class="form1">
             <label for="mnumber">
               <h5 class="tele">Mobile Number</h5>
             </label>
-            <input type="number" id="mnumber" name="number" required placeholder="10-digit mobile number without prefix"><b><spam class="formerror"></spam></b>
+            <input type="number" id="moblie" name="number" placeholder="10-digit mobile number without prefix">
+            <div  class="alert" id="mobile-error"></div>
           </div>
           <div class="form1">
-            <label for="pncode">
+            <label for="pincode">
               <h5 class="tele">PIN Code</h5>
             </label>
-            <input type="number" id="pncode" name="pinncode" required placeholder="6 digits [0-9]PIN code"><b><spam class="formerror"></spam></b>
+            <input type="number" id="pincode" name="pinncode" placeholder="6 digits [0-9]PIN code">
+            <div  class="alert" id="pincode-error"></div>
           </div>
           <div class="form1">
             <label for="farea">
               <h5 class="tele">Flat, House no., Building, Company, Apartment</h5>
             </label>
-            <input type="text" id="farea" name="area" required><b><spam class="formerror"></spam></b>
+            <input type="text" id="farea" name="area" maxlength="30">
+            <div  class="alert" id="farea-error"></div>
           </div>
           <div class="form1">
             <label for="varea">
               <h5 class="tele">Area, Colony, Street, Sector, Village</h5>
             </label>
-            <input type="text" id="varea" name="area" required><b><spam class="formerror"></spam></b>
+            <input type="text" id="varea" name="area" maxlength="20">
+            <div  class="alert" id="varea-error"></div>
           </div>
           <div class="form1">
             <label for="larea">
               <h5 class="tele">Landmark</h5>
             </label>
-            <input type="text" id="larea" name="area" required placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc."><b><spam class="formerror"></spam></b>
+            <input type="text" id="larea" name="area" placeholder="E.g.Near AIIMS Flyover,Behind Regal Cinema,etc." maxlength="20">
+            <div  class="alert" id="larea-error"></div>
          </div>
          <div class="form1">
             <label for="tarea">
               <h5 class="tele">Town/City</h5>
             </label>
-            <input type="text" id="tarea" name="area"required><b><spam class="formerror"></spam></b>
+            <input type="text" id="tarea" name="area" maxlength="20">
+            <div  class="alert" id="tarea-error"></div>
           </div>
           <div class="form1">
             <label for="state">
@@ -87,6 +95,7 @@
               <option value="uttar">Uttar Pradesh</option>
               <option value="uttra">Uttarakhand</option>
             </select>
+            <div  class="alert" id="state-error"></div>
          </div>
          <div class="form1">
             <label for="country">
@@ -106,13 +115,13 @@
           </select>
         </div>
         <div class="form1">
-          <button class="dallo" type="button" onclick="return validateForm()">Add address</button>
+          <button class="dallo" type="button" id="submitButton">Add address</button>
         </div>
         </form>
       </div>
     </div>
 
   </div>
-  <script src="form.js"></script>
+  <script src="form1.js"></script>
 </body>
 </html>

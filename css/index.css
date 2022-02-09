@@ -39,6 +39,29 @@
   vertical-align: middle;
   width: 75px;
 }
+.sidebar{
+  height: 100%;
+  width: 350px;
+  z-index: 2;
+  top: 0;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  transition: 0.5s;
+  position: fixed;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1;
+  cursor: pointer;
+}
 .pink1 {
   padding: 5px;
   float: left;
@@ -243,15 +266,17 @@ ul li{
   padding:10px;
 }
 .simple{
-  position: absolute;
-  width: 25%;
-  color:white;
+  font-weight: 600;
+  font-size: 20px;
   background-color:#232f3e;
-  top:0;
-  font-size: 17px;
-  font-weight: bold;
   height: 45px;
+  color: #ffffff;
+  position: absolute;
+  top:0;
+  width: 25%;
   text-align: center;
+
+  
 }
 .simple1{
   top:0;
@@ -975,14 +1000,10 @@ h3{
   display: block;
 }
 .unity{
-  width: auto;
+  width: 100%;
   height: 60px;
   border:1px solid black;
   box-sizing: border-box;
-  opacity: 0.6;
-}
-.unity:hover{
-  opacity: 1;
 }
 .lpu1{
   width: 9%;
